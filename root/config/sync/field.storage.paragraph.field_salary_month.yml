@@ -1,0 +1,21 @@
+uuid: 0a37d4b3-4366-4eba-995e-e2fa461dee87
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_salary_month
+field_name: field_salary_month
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

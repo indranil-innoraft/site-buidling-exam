@@ -1,0 +1,18 @@
+uuid: 6ea63b33-9730-433d-bd97-2ea65ef4c62a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Leave
+type: leave
+description: 'Leave of employees.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,31 @@
+uuid: d1cd4069-369d-4875-b3aa-dd03b87ab854
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_salary_breakup
+    - node.type.salary_details
+    - paragraphs.paragraphs_type.previous_months_salary_status
+  module:
+    - entity_reference_revisions
+id: node.salary_details.field_salary_breakup
+field_name: field_salary_breakup
+entity_type: node
+bundle: salary_details
+label: 'Salary Breakup'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      previous_months_salary_status: previous_months_salary_status
+    negate: 0
+    target_bundles_drag_drop:
+      previous_months_salary_status:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

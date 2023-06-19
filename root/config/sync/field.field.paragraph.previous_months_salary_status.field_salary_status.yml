@@ -1,0 +1,21 @@
+uuid: da01426d-8715-45d5-8de8-bac6aeac3a47
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_salary_status
+    - paragraphs.paragraphs_type.previous_months_salary_status
+  module:
+    - options
+id: paragraph.previous_months_salary_status.field_salary_status
+field_name: field_salary_status
+entity_type: paragraph
+bundle: previous_months_salary_status
+label: 'Salary Status'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,37 @@
+uuid: 3340e449-c6ca-4311-b1ce-d5c26e8000a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.leave.field_employee_name_apply_leave
+    - field.field.node.leave.field_leave_type
+    - node.type.leave
+  module:
+    - options
+    - user
+id: node.leave.default
+targetEntityType: node
+bundle: leave
+mode: default
+content:
+  field_employee_name_apply_leave:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_leave_type:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,87 @@
+uuid: e6836f43-198f-49f1-83e6-4035a299e88a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.salary_details.field_basic_salary
+    - field.field.node.salary_details.field_employee_name
+    - field.field.node.salary_details.field_hra
+    - field.field.node.salary_details.field_last_year_total_salary
+    - field.field.node.salary_details.field_salary_breakup
+    - field.field.node.salary_details.field_special_allowances
+    - node.type.salary_details
+  module:
+    - entity_reference_revisions
+    - user
+id: node.salary_details.default
+targetEntityType: node
+bundle: salary_details
+mode: default
+content:
+  field_basic_salary:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_employee_name:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_hra:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_last_year_total_salary:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_salary_breakup:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_special_allowances:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

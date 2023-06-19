@@ -1,0 +1,23 @@
+uuid: 45b20100-3934-43f9-8b5b-af1e6dd58dde
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_basic_salary
+    - node.type.salary_details
+id: node.salary_details.field_basic_salary
+field_name: field_basic_salary
+entity_type: node
+bundle: salary_details
+label: Basic
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: 'K / Year'
+field_type: decimal

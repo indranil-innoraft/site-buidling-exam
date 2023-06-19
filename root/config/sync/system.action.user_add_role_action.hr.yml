@@ -1,0 +1,14 @@
+uuid: 4dcfb54f-2860-477c-a7e1-36663bdc5c24
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.hr
+  module:
+    - user
+id: user_add_role_action.hr
+label: 'Add the HR role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: hr

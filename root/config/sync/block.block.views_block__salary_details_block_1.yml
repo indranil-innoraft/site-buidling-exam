@@ -1,0 +1,30 @@
+uuid: 9a984d01-ff3e-4441-8c65-0c3cd3dfff24
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.salary_details
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap
+id: views_block__salary_details_block_1
+theme: bootstrap
+region: sidebar_second
+weight: -8
+provider: null
+plugin: 'views_block:salary_details-block_1'
+settings:
+  id: 'views_block:salary_details-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/employee/*'

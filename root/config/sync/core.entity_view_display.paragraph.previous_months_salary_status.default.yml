@@ -1,0 +1,31 @@
+uuid: c6f665c5-5e31-4f0e-b265-6d86cacb7462
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.previous_months_salary_status.field_salary_month
+    - field.field.paragraph.previous_months_salary_status.field_salary_status
+    - paragraphs.paragraphs_type.previous_months_salary_status
+  module:
+    - options
+id: paragraph.previous_months_salary_status.default
+targetEntityType: paragraph
+bundle: previous_months_salary_status
+mode: default
+content:
+  field_salary_month:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_salary_status:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

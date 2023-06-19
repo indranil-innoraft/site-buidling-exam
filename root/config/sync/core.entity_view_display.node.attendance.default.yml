@@ -1,0 +1,55 @@
+uuid: 2efdaeda-9a46-42c2-b3d0-39ae1912a4b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.attendance.field_employee_name_attendence
+    - field.field.node.attendance.field_today_s_last_punch
+    - field.field.node.attendance.field_tomorrow_s_shift
+    - field.field.node.attendance.field_yesterday_s_shift
+    - node.type.attendance
+  module:
+    - user
+id: node.attendance.default
+targetEntityType: node
+bundle: attendance
+mode: default
+content:
+  field_employee_name_attendence:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_today_s_last_punch:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_tomorrow_s_shift:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_yesterday_s_shift:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

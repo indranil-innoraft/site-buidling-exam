@@ -1,0 +1,20 @@
+uuid: 5f171660-c7e8-4f47-94dc-9966fbea826b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_last_year_total_salary
+field_name: field_last_year_total_salary
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

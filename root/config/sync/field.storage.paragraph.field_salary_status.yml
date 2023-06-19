@@ -1,0 +1,27 @@
+uuid: 0049e252-ee6e-4913-897f-4daaf3248db9
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_salary_status
+field_name: field_salary_status
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Processed
+      label: Processed
+    -
+      value: Rejected
+      label: Rejected
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

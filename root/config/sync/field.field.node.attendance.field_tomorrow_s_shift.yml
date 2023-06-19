@@ -1,0 +1,19 @@
+uuid: df25274e-5640-449f-9463-6b56a7c35c84
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tomorrow_s_shift
+    - node.type.attendance
+id: node.attendance.field_tomorrow_s_shift
+field_name: field_tomorrow_s_shift
+entity_type: node
+bundle: attendance
+label: "Tomorrow's Shift"
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

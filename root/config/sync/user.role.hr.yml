@@ -1,0 +1,16 @@
+uuid: f1b39f5b-b789-4874-866e-d3c349021591
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.salary_details
+  module:
+    - node
+id: hr
+label: HR
+weight: 4
+is_admin: null
+permissions:
+  - 'administer account settings'
+  - 'administer users'
+  - 'create salary_details content'
