@@ -1,0 +1,24 @@
+uuid: 4e4bd9cf-aaee-4c88-a764-09015be9f451
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.leave.field_employee_name_apply_leave
+    - field.field.node.leave.field_leave_type
+    - node.type.leave
+  module:
+    - user
+id: node.leave.teaser
+targetEntityType: node
+bundle: leave
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_employee_name_apply_leave: true
+  field_leave_type: true

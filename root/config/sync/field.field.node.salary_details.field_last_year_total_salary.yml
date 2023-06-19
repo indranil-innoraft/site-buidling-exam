@@ -1,0 +1,23 @@
+uuid: ef804e11-fbef-4679-b924-23e9b9248747
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_last_year_total_salary
+    - node.type.salary_details
+id: node.salary_details.field_last_year_total_salary
+field_name: field_last_year_total_salary
+entity_type: node
+bundle: salary_details
+label: 'Last Year Total Salary'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: 'K / Year'
+field_type: decimal

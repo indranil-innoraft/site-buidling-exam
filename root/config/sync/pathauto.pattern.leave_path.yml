@@ -1,0 +1,22 @@
+uuid: cb29d212-a999-4a49-91b4-d0045a8b67a2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: leave_path
+label: 'Leave Path'
+type: 'canonical_entities:node'
+pattern: 'leave/[node:title]'
+selection_criteria:
+  3f67ad0d-99ab-472b-9b60-98233e13a4c9:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 3f67ad0d-99ab-472b-9b60-98233e13a4c9
+    context_mapping:
+      node: node
+    bundles:
+      leave: leave
+selection_logic: and
+weight: -5
+relationships: {  }

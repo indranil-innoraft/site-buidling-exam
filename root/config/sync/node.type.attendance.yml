@@ -1,0 +1,17 @@
+uuid: 1a5155c1-409c-4abd-be3b-2b599ff6d9cf
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Attendance
+type: attendance
+description: 'Attendance of employees.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

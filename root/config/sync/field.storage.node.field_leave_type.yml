@@ -1,0 +1,33 @@
+uuid: db516415-7efc-4f1e-bd0d-7d471e51d8a9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_leave_type
+field_name: field_leave_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: CL
+      label: CL
+    -
+      value: COFF
+      label: COFF
+    -
+      value: PL
+      label: PL
+    -
+      value: SL
+      label: SL
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

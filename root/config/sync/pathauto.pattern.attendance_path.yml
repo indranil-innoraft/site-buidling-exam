@@ -1,0 +1,22 @@
+uuid: f57fe523-54b0-4b21-9e0e-73afd89ac797
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: attendance_path
+label: 'Attendance Path'
+type: 'canonical_entities:node'
+pattern: 'attendance/[node:field_employee_name_attendence]'
+selection_criteria:
+  81c3df96-23dd-456b-970e-de6d223b97a9:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 81c3df96-23dd-456b-970e-de6d223b97a9
+    context_mapping:
+      node: node
+    bundles:
+      attendance: attendance
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,34 @@
+uuid: 317c275a-be02-4fa9-8756-efb2d8a1a841
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_employee_name
+    - node.type.salary_details
+id: node.salary_details.field_employee_name
+field_name: field_employee_name
+entity_type: node
+bundle: salary_details
+label: 'Employee Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    filter:
+      type: role
+      role:
+        hr: hr
+        employee: employee
+        content_editor: '0'
+        administrator: '0'
+    include_anonymous: false
+field_type: entity_reference

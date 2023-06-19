@@ -1,0 +1,21 @@
+uuid: f1c72abc-2ed5-426e-aa72-444423377d1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_leave_type
+    - node.type.leave
+  module:
+    - options
+id: node.leave.field_leave_type
+field_name: field_leave_type
+entity_type: node
+bundle: leave
+label: 'Leave Type'
+description: "Employee's leave type."
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

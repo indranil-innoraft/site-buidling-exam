@@ -1,0 +1,32 @@
+uuid: 2354cc73-0558-430c-89ad-afeeb291ef84
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.salary_details.field_basic_salary
+    - field.field.node.salary_details.field_employee_name
+    - field.field.node.salary_details.field_hra
+    - field.field.node.salary_details.field_last_year_total_salary
+    - field.field.node.salary_details.field_salary_breakup
+    - field.field.node.salary_details.field_special_allowances
+    - node.type.salary_details
+  module:
+    - user
+id: node.salary_details.teaser
+targetEntityType: node
+bundle: salary_details
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_basic_salary: true
+  field_employee_name: true
+  field_hra: true
+  field_last_year_total_salary: true
+  field_salary_breakup: true
+  field_special_allowances: true

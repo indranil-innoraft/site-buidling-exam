@@ -1,0 +1,10 @@
+uuid: 02501238-8dea-4a6b-8109-cb40de4356b7
+langcode: en
+status: true
+dependencies: {  }
+id: previous_months_salary_status
+label: 'Previous Months Salary Status'
+icon_uuid: null
+icon_default: null
+description: "Here last month's salary status will be shown."
+behavior_plugins: {  }

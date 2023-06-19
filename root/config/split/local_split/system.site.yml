@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: 7a6ffbfa-9628-43c2-8a13-08038bdcede3
+name: 'Local Employee Management Portal'
+mail: indranil.roy@innoraft.com
+slogan: ''
+page:
+  403: /node/4
+  404: /node/3
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: ''
